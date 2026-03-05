@@ -702,42 +702,39 @@ img[alt="profile photo"] {
 
 /* ========== Awards Section ========== */
 .awards-timeline {
-  position: relative;
   margin-top: 14px;
-  padding-left: 18px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
 .awards-timeline:before {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: 6px;
-  bottom: 6px;
-  width: 2px;
-  background: linear-gradient(180deg, rgba(255, 215, 0, 0.55), rgba(255, 215, 0, 0.12));
-  border-radius: 999px;
+  display: none;
 }
 
 .award-item {
   position: relative;
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 10px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 180, 0, 0.03));
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 14px;
+  padding: 12px 14px;
+  flex: 1 1 calc(50% - 6px);
+  min-width: 200px;
+  max-width: 48%;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.award-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.12);
 }
 
 .award-item:before {
-  content: '';
-  position: absolute;
-  left: -18px;
-  top: 16px;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255, 215, 0, 0.95);
-  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.18);
+  display: none;
 }
 
 .award-year {

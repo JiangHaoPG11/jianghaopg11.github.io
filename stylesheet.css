@@ -471,10 +471,11 @@ img[alt="profile photo"] {
 .pub-badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 999px;
-  font-size: 11px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
   color: rgba(255, 255, 255, 0.92);
   background: linear-gradient(135deg, rgba(124, 92, 255, 0.65), rgba(25, 211, 255, 0.45));
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -648,6 +649,58 @@ img[alt="profile photo"] {
 }
 
 /* ========== Awards Section ========== */
+.awards-timeline {
+  position: relative;
+  margin-top: 14px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.awards-timeline:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.55), rgba(255, 215, 0, 0.12));
+  border-radius: 999px;
+}
+
+.award-item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.award-item:before {
+  content: '';
+  position: absolute;
+  left: -18px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.95);
+  box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.18);
+}
+
+.award-year {
+  flex: 0 0 auto;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 215, 0, 0.16);
+  border: 1px solid rgba(255, 215, 0, 0.28);
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-top: 1px;
+}
+
 .awards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -728,6 +781,9 @@ img[alt="profile photo"] {
   .news-item { flex-direction: column; gap: 8px; }
   .news-date { flex: none; width: fit-content; }
   .awards-grid { grid-template-columns: 1fr; }
+  .awards-timeline { padding-left: 16px; }
+  .award-item { flex-direction: column; gap: 8px; }
+  .award-year { width: fit-content; }
   .award-card { flex-direction: column; align-items: flex-start; text-align: left; }
   .award-icon { margin-bottom: 8px; }
 }

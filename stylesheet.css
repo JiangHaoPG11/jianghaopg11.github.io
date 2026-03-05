@@ -378,9 +378,9 @@ img[alt="profile photo"] {
 }
 
 .timeline-dot {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
   background: rgba(124, 92, 255, 0.18);
   border: 1px solid rgba(124, 92, 255, 0.35);
   display: inline-flex;
@@ -393,8 +393,8 @@ img[alt="profile photo"] {
 }
 
 .timeline-logo {
-  width: 34px;
-  height: 34px;
+  width: 42px;
+  height: 42px;
   object-fit: contain;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.85);

@@ -392,6 +392,21 @@ img[alt="profile photo"] {
   margin-left: -6px; /* visually align with line */
 }
 
+.timeline-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  .timeline-logo {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
 .timeline-content {
   flex: 1 1 auto;
   background: var(--panel);
@@ -590,9 +605,9 @@ img[alt="profile photo"] {
 }
 
 .research-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ========== News Section ========== */
@@ -789,9 +804,9 @@ img[alt="profile photo"] {
 
 .award-subtitle {
   margin-top: 4px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .award-date {

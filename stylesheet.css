@@ -631,14 +631,23 @@ img[alt="profile photo"] {
 .news-date {
   flex: 0 0 auto;
   font-weight: 900;
-  font-size: 12px;
-  letter-spacing: 0.25px;
-  color: rgba(255, 255, 255, 0.92);
-  background: rgba(25, 211, 255, 0.16);
-  border: 1px solid rgba(25, 211, 255, 0.28);
-  padding: 4px 8px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: rgba(255, 255, 255, 0.96);
+  background: rgba(25, 211, 255, 0.26);
+  border: 1px solid rgba(25, 211, 255, 0.45);
+  padding: 6px 10px;
   border-radius: 999px;
   margin-top: 1px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-color-scheme: light) {
+  .news-date {
+    color: rgba(0, 0, 0, 0.78);
+    background: rgba(25, 211, 255, 0.18);
+    border-color: rgba(25, 211, 255, 0.35);
+  }
 }
 
 .news-content {

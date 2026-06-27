@@ -217,6 +217,43 @@ name {
   margin-bottom: 14px;
 }
 
+/* About Me info rows */
+.about-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+}
+
+.about-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  line-height: 1.65;
+}
+
+.about-icon {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.18), rgba(25, 211, 255, 0.10));
+  border: 1px solid rgba(124, 92, 255, 0.28);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--brand2);
+  margin-top: 2px;
+}
+
+.about-text {
+  flex: 1 1 auto;
+  font-size: 15px;
+  color: var(--text);
+}
+
 .profile-photo {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }

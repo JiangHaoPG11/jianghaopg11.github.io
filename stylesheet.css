@@ -778,9 +778,8 @@ img[alt="profile photo"] {
   border: 1px solid rgba(255, 215, 0, 0.15);
   border-radius: 14px;
   padding: 12px 14px;
-  flex: 1 1 calc(50% - 6px);
-  min-width: 200px;
-  max-width: 48%;
+  flex: 1 1 100%;
+  max-width: 100%;
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
 

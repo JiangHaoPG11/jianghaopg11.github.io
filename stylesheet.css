@@ -855,18 +855,22 @@ img[alt="profile photo"] {
 .award-info {
   flex: 1 1 auto;
   min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .award-title {
   font-weight: 800;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text);
   letter-spacing: 0.15px;
 }
 
 .award-subtitle {
-  margin-top: 4px;
-  font-size: 14px;
+  margin-top: 0;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.5;
 }

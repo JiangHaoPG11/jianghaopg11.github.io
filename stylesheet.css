@@ -861,14 +861,14 @@ img[alt="profile photo"] {
 
 .award-title {
   font-weight: 800;
-  font-size: 17px;
+  font-size: 15px;
   color: var(--text);
   letter-spacing: 0.15px;
 }
 
 .award-subtitle {
   margin-top: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--muted);
   line-height: 1.5;
 }

@@ -825,17 +825,15 @@ img[alt="profile photo"] {
   display: flex;
   gap: 14px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(255, 180, 0, 0.03));
-  border: 1px solid rgba(255, 215, 0, 0.15);
-  border-radius: 14px;
-  padding: 14px 16px;
-  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  background: transparent;
+  border: none;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .award-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255, 215, 0, 0.35);
-  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.12);
+  /* hover effect handled by .award-item */
 }
 
 .award-icon {

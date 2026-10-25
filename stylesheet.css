@@ -881,6 +881,35 @@ img[alt="profile photo"] {
   letter-spacing: 0.3px;
 }
 
+/* Academic Service */
+.service-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.service-label {
+  flex: 0 0 90px;
+  font-weight: 700;
+  color: var(--brand2);
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.service-venues {
+  flex: 1 1 auto;
+  color: var(--text);
+}
+
 /* Reduce table spacing a bit on mobile */
 @media (max-width: 768px) {
   name { font-size: 28px; }

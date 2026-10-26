@@ -898,7 +898,7 @@ img[alt="profile photo"] {
 }
 
 .service-label {
-  flex: 0 0 90px;
+  flex: 0 0 130px;
   font-weight: 700;
   color: var(--brand2);
   font-size: 14px;

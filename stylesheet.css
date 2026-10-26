@@ -893,16 +893,17 @@ img[alt="profile photo"] {
   display: flex;
   align-items: baseline;
   gap: 12px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
 .service-label {
-  flex: 0 0 130px;
+  flex: 0 0 140px;
   font-weight: 700;
   color: var(--brand2);
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.2px;
+  white-space: nowrap;
 }
 
 .service-venues {

@@ -760,11 +760,11 @@ img[alt="profile photo"] {
 /* Small decorative icons beside organization and conference keywords. */
 .news-keyword-logo {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: auto;
+  height: 1.5em;
   margin-right: 5px;
   object-fit: contain;
-  vertical-align: -3px;
+  vertical-align: middle;
 }
 
 .news-keyword-icon {

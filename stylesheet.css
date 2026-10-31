@@ -92,9 +92,19 @@ b {
 }
 
 strong a,
-b a {
+b a,
+strong papertitle,
+b papertitle {
   font-size: inherit;
   font-weight: inherit;
+}
+
+/* Nested emphasis should stay 8% larger, not compound the increase. */
+strong strong,
+strong b,
+b strong,
+b b {
+  font-size: inherit;
 }
 
 heading {
@@ -765,12 +775,20 @@ img[alt="profile photo"] {
   line-height: 1.65;
 }
 
-/* Keep News labels readable at the surrounding text size. */
+/* News labels are bold text too: match the 8% emphasis increase. */
 .news-content .pub-badge {
   max-width: 100%;
-  font-size: 1em;
+  font-size: 1.08em;
   white-space: normal;
   vertical-align: middle;
+}
+
+/* Both <strong><badge> and <badge><strong> occur in the News. */
+.news-content strong .pub-badge,
+.news-content b .pub-badge,
+.news-content .pub-badge strong,
+.news-content .pub-badge b {
+  font-size: inherit;
 }
 
 /* Show the brand symbol; the full wordmarks are too detailed at inline sizes. */

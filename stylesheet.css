@@ -751,9 +751,22 @@ img[alt="profile photo"] {
 
 .news-content {
   flex: 1 1 auto;
+  min-width: 0;
   font-size: 16px;
   color: var(--text);
   line-height: 1.65;
+}
+
+/* Preserve the team's full wordmark and its white background in both themes. */
+.news-team-logo {
+  display: block;
+  width: 340px;
+  max-width: 100%;
+  height: auto;
+  margin: 2px 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
 }
 
 /* ========== Awards Section ========== */

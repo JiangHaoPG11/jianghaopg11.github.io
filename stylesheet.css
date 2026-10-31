@@ -84,9 +84,17 @@ a {
   font-size: 16px;
 }
 
-strong {
+strong,
+b {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 1.08em;
+  font-weight: 700;
+}
+
+strong a,
+b a {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 heading {
@@ -757,20 +765,58 @@ img[alt="profile photo"] {
   line-height: 1.65;
 }
 
-/* Small decorative icons beside organization and conference keywords. */
-.news-keyword-logo {
-  display: inline-block;
-  width: auto;
-  height: 1.5em;
-  margin-right: 5px;
-  object-fit: contain;
+/* Keep News labels readable at the surrounding text size. */
+.news-content .pub-badge {
+  max-width: 100%;
+  font-size: 1em;
+  white-space: normal;
   vertical-align: middle;
 }
 
-.news-keyword-icon {
-  margin-right: 5px;
-  font-size: 0.95em;
-  vertical-align: baseline;
+/* Show the brand symbol; the full wordmarks are too detailed at inline sizes. */
+.news-keyword-logo {
+  display: inline-block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  overflow: hidden;
+  margin-right: 8px;
+  border: 1px solid #d5dce6;
+  border-radius: 7px;
+  background: #fff;
+  vertical-align: middle;
+}
+
+.news-keyword-logo img {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: auto;
+  max-width: none;
+  height: 28px;
+}
+
+/* The four-color symbol occupies the upper-left 230px of the 373px image. */
+.news-keyword-logo--msra img {
+  height: 46px;
+}
+
+.news-content .news-keyword-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  margin-right: 8px;
+  border: 1px solid #c7d8f2;
+  border-radius: 7px;
+  background: #edf4ff;
+  color: #244d87;
+  font-size: 22px;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 /* Preserve the team's full wordmark and its white background in both themes. */

@@ -757,6 +757,22 @@ img[alt="profile photo"] {
   line-height: 1.65;
 }
 
+/* Small decorative icons beside organization and conference keywords. */
+.news-keyword-logo {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  object-fit: contain;
+  vertical-align: -3px;
+}
+
+.news-keyword-icon {
+  margin-right: 5px;
+  font-size: 0.95em;
+  vertical-align: baseline;
+}
+
 /* Preserve the team's full wordmark and its white background in both themes. */
 .news-team-logo {
   display: block;

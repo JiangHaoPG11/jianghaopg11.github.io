@@ -815,6 +815,19 @@ img[alt="profile photo"] {
   height: 28px;
 }
 
+/* Let the full team wordmark determine the inline frame's width. */
+.news-keyword-logo--team {
+  box-sizing: border-box;
+  width: auto;
+  flex-basis: auto;
+  padding: 2px;
+}
+
+.news-keyword-logo--team img {
+  position: static;
+  display: block;
+}
+
 /* The four-color symbol occupies the upper-left 230px of the 373px image. */
 .news-keyword-logo--msra img {
   height: 46px;

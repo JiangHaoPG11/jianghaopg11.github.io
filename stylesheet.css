@@ -1017,6 +1017,25 @@ img[alt="profile photo"] {
   color: var(--text);
 }
 
+.service-subheading {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+  margin: 12px 0 6px;
+}
+
+.service-ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0 0 4px;
+}
+
+.service-ul li {
+  font-size: 15.5px;
+  color: var(--brand2);
+  line-height: 1.9;
+}
+
 /* Reduce table spacing a bit on mobile */
 @media (max-width: 768px) {
   name { font-size: 28px; }

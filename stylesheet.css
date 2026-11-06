@@ -1019,7 +1019,7 @@ img[alt="profile photo"] {
 
 .service-subheading {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
   color: var(--text);
   margin: 12px 0 6px;
 }
@@ -1031,9 +1031,13 @@ img[alt="profile photo"] {
 }
 
 .service-ul li {
-  font-size: 15.5px;
-  color: var(--brand2);
+  font-size: 17px;
+  color: var(--text);
   line-height: 1.9;
+}
+
+.service-ul li::marker {
+  color: var(--brand2);
 }
 
 /* Reduce table spacing a bit on mobile */

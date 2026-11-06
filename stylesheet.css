@@ -901,7 +901,7 @@ img[alt="profile photo"] {
 .award-year {
   flex: 0 0 auto;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 0.2px;
   color: rgba(255, 255, 255, 0.96);
   background: rgba(255, 215, 0, 0.26);
@@ -967,14 +967,14 @@ img[alt="profile photo"] {
 
 .award-title {
   font-weight: 800;
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text);
   letter-spacing: 0.15px;
 }
 
 .award-subtitle {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--muted);
   line-height: 1.5;
 }
